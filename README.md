@@ -1,50 +1,152 @@
-# Welcome to your Expo app 👋
+---
+# 💼 Job Search Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A sleek, modern, and fast **Job Search mobile application** built with **React Native** using **Expo Router** and styled with **Tailwind CSS (NativeWind)**. This app connects to real-time job listings via **Rapid API**, offering users an intuitive experience to find and apply for jobs across various categories and locations.
 
-## Get started
+<p align="center">
+<img src="https://img.shields.io/badge/React%20Native-0.76.3-61DAFB" />
+<img src="https://img.shields.io/badge/Expo-52.0.17-blue" />
+<img src="https://img.shields.io/badge/Tailwind-NativeWind-38bdf8" />
+<img src="https://img.shields.io/badge/License-MIT-green" />
+</p>
+---
 
-1. Install dependencies
+## 📸 Screenshots
 
-   ```bash
-   npm install
-   ```
+<p align="center">
+  <img src="Screenshot_1744581963.png" width="200" />
+  <img src="Screenshot_1744581965.png" width="200" />
+  <img src="Screenshot_1744581997.png" width="200" />
+  <img src="Screenshot_1744582006.png" width="200" />
+  <img src="Screenshot_1744581929.png" width="200" />
+  <img src="Screenshot_1744581941.png" width="200" />
+</p>
 
-2. Start the app
+---
 
-   ```bash
-    npx expo start
-   ```
+## 🚀 Features
 
-In the output, you'll find options to open the app in a
+- 🔍 **Search Jobs by Title, Location, or Category**
+- 🏷️ **View Detailed Job Information**
+- 📄 **Save/Bookmark Jobs**
+- 🌐 **Real-time Listings from Rapid API**
+- 🎨 **Tailwind CSS Styling (NativeWind)**
+- ⚡ **Responsive UI & Smooth Navigation**
+- 🌙 **Dark/Light Theme Ready (via system UI)**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🧰 Tech Stack
 
-## Get a fresh project
+### 📱 Framework & Libraries
 
-When you're ready, run:
+- **React Native** (Expo SDK 52)
+- **Expo Router** for file-based navigation
+- **Tailwind CSS** with **NativeWind** for styling
+- **React Navigation** (Bottom Tabs & Native Stack)
+
+### 🧠 Utilities & Tools
+
+- **Axios** for API requests
+- **React Native Reanimated** and Gesture Handler
+- **Dotenv** for managing environment variables
+- **Jest** + **Jest-Expo** for testing
+
+### 🗄️ API
+
+- 🔗 **[Rapid API](https://rapidapi.com/)** - Job listings integration
+
+---
+
+## 🗂️ Folder Structure
 
 ```bash
-npm run reset-project
+.
+├── app/                   # Routes and screens (Expo Router)
+│   ├── search/[id].tsx           # Tab-based navigation
+│   ├── job-details/[id].tsx       # Job details screen
+│   └── _layout.tsx        # Global layout wrapper
+├── assets/                # Fonts, images, splash, etc.
+├── components/            # Reusable UI components
+├── constants/             # Static values (colors, endpoints, etc.)
+├── hooks/                 # Custom React hooks
+├── services/              # API service logic (Rapid API)
+├── store/                 # Global state (if needed)
+├── types/                 # TypeScript definitions
+├── utils/                 # Helper functions
+└── scripts/               # Project scripts (e.g., reset)
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## ⚙️ Getting Started
 
-To learn more about developing your project with Expo, look at the following resources:
+### 1. Clone the Repository
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+git clone https://github.com/your-username/jobsearch-app.git
+cd jobsearch-app
+```
 
-## Join the community
+### 2. Install Dependencies
 
-Join our community of developers creating universal apps.
+```bash
+npm install
+# or
+yarn
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 3. Set Up Environment Variables
+
+Create a `.env` file in the root and add your Rapid API credentials:
+
+```env
+RAPID_API_KEY=your_key_here
+RAPID_API_HOST=your_host_here
+```
+
+### 4. Start Development Server
+
+```bash
+npx expo start
+```
+
+---
+
+## 🧪 Testing
+
+Run tests with:
+
+```bash
+npm test
+```
+
+Powered by **Jest** and **jest-expo**.
+
+---
+
+## 🤝 Contribution
+
+We welcome all contributions! To contribute:
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/something`)
+3. Commit your changes (`git commit -m 'feat: Add something'`)
+4. Push to the branch (`git push origin feature/something`)
+5. Open a pull request
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for more details.
+
+---
+
+## 👨🏽‍💻 Author
+
+**Chinedu Aguwa**  
+📧 [neduaguwa443@gmail.com](mailto:neduaguwa443@gmail.com)  
+📞 +234 810 547 1046  
+[LinkedIn](https://www.linkedin.com/in/chinedu-aguwa-b1747a2b0) • [GitHub](https://github.com/chi2785443)
